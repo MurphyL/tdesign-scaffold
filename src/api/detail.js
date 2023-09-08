@@ -1,8 +1,8 @@
 import { request } from '@/utils/request';
 
 const Api = {
-  PurchaseList: '/get-purchase-list',
-  ProjectList: '/get-project-list',
+  PurchaseList: '/get-purchase-list.json',
+  ProjectList: '/get-project-list.json',
 };
 
 export function getPurchaseList() {

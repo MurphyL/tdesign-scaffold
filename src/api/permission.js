@@ -1,7 +1,7 @@
 import { request } from '@/utils/request';
 
 const Api = {
-  MenuList: '/get-menu-list',
+  MenuList: '/get-menu-list.json',
 };
 
 export function getMenuList() {

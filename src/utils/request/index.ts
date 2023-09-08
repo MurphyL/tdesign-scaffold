@@ -152,6 +152,7 @@ const transform: AxiosTransform = {
 };
 
 function createAxios(opt?: Partial<CreateAxiosOptions>) {
+    console.log(host);
     return new VAxios(
         merge(
             <CreateAxiosOptions>{
@@ -169,7 +170,7 @@ function createAxios(opt?: Partial<CreateAxiosOptions>) {
                 // 配置项，下面的选项都可以在独立的接口请求中覆盖
                 requestOptions: {
                     // 接口地址
-                    apiUrl: host,
+                    // apiUrl: host,
                     // 是否自动添加接口前缀
                     isJoinPrefix: true,
                     // 接口前缀

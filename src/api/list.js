@@ -1,8 +1,8 @@
 import { request } from '@/utils/request';
 
 const Api = {
-  BaseList: '/get-list',
-  CardList: '/get-card-list',
+  BaseList: '/get-list.json',
+  CardList: '/get-card-list.json',
 };
 
 export function getList() {
