@@ -1,19 +1,27 @@
 <template>
-  <router-view :class="[mode]" />
+    <router-view :class="[mode]" />
 </template>
-<script setup lang="ts">
-import { computed } from 'vue';
 
+<script>
+import { defineComponent } from 'vue';
 import { useSettingStore } from '@/store';
 
-const store = useSettingStore();
-
-const mode = computed(() => {
-  return store.displayMode;
+export default defineComponent({
+    setup() {
+        return {
+            store: useSettingStore()
+        };
+    },
+    computed: {
+        mode() {
+            return this.store.displayMode;
+        }
+    }
 });
 </script>
+
 <style lang="less" scoped>
 #nprogress .bar {
-  background: var(--td-brand-color) !important;
+    background: var(--td-brand-color) !important;
 }
 </style>

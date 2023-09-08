@@ -1,4 +1,3 @@
-import type { CardListResult, ListResult } from '@/api/model/listModel';
 import { request } from '@/utils/request';
 
 const Api = {
@@ -7,13 +6,13 @@ const Api = {
 };
 
 export function getList() {
-  return request.get<ListResult>({
+  return request.get({
     url: Api.BaseList,
   });
 }
 
 export function getCardList() {
-  return request.get<CardListResult>({
+  return request.get({
     url: Api.CardList,
   });
 }

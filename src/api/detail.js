@@ -1,4 +1,3 @@
-import type { ProjectListResult, PurchaseListResult } from '@/api/model/detailModel';
 import { request } from '@/utils/request';
 
 const Api = {
@@ -7,13 +6,13 @@ const Api = {
 };
 
 export function getPurchaseList() {
-  return request.get<PurchaseListResult>({
+  return request.get({
     url: Api.PurchaseList,
   });
 }
 
 export function getProjectList() {
-  return request.get<ProjectListResult>({
+  return request.get({
     url: Api.ProjectList,
   });
 }

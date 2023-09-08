@@ -1,4 +1,3 @@
-import type { MenuListResult } from '@/api/model/permissionModel';
 import { request } from '@/utils/request';
 
 const Api = {
@@ -6,7 +5,7 @@ const Api = {
 };
 
 export function getMenuList() {
-  return request.get<MenuListResult>({
+  return request.get({
     url: Api.MenuList,
   });
 }

@@ -26,6 +26,6 @@
     "src/**/*.tsx",
     "src/**/*.vue",
     "node_modules/tdesign-vue-next/global.d.ts"
-  ],
+, "src/api/detail.js", "src/api/list.js", "src/api/permission.js"  ],
   "compileOnSave": false
 }

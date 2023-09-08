@@ -6,7 +6,7 @@ NPM_MIRROR:=https://registry.npmmirror.com
 
 tdesign_dev_v1:
 	docker run -dit --name=$(DOCKER_CONTAINER) \
-		-v $(CURDIR):/usr/murph -p 3002:3002 \
+		-v $(CURDIR):/usr/murph -p 3003:3002 \
 		-e SCHEDULER_TIMEZONE=Asia/Shanghai \
 		node:18.17.0
 	docker exec -it $(DOCKER_CONTAINER) apt update -y
